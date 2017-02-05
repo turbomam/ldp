@@ -351,4 +351,4 @@ small.piv <- small.piv[, !names(small.piv) %in% c("HOH")]
 
 nonpol.dist <- as.matrix(dist(small.piv, method = "binary"))
 
-save(combo.brief, nonpol.dist, file = "nonpol_dist.Rdata")
+save(combo.brief, nonpol.dist, small.piv, file = "nonpol_dist.Rdata")
