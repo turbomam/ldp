@@ -1,3 +1,7 @@
+library(bio3d)
+
+load("C:/Users/mark/Desktop/ldp/atom_dat.Rdata")
+
 # setwd("c:\\Users\\mark\\Documents")
 # list.files()
 # setwd("wang4alks")
@@ -47,7 +51,7 @@ temp <- lapply(local.pdbs, function(current.local) {
   # paste0(aa321(as.was$atom$resid[as.was$atom$elety == "CA"]), collapse = "")
   
   awat <- as.was$atom
-  awat <- awat[awat$elety == "CA" & awat$type == "ATOM" , ]
+  awat <- awat[awat$elety == "CA" & awat$type == "ATOM" ,]
   
 })
 
@@ -56,3 +60,5 @@ names(temp) <- last.bit
 # local.pdbs[[1]]
 
 atom.dat <- append(temp, atom.dat)
+
+save(atom.dat, file = "atom_dat.Rdata")

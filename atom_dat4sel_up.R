@@ -193,7 +193,7 @@ atom.dat <- lapply(desired.pdbs, function(current.pdb) {
                           my.atoms$elety == 'CA' &
                           my.atoms$chain %in% my.strands &
                           is.na(my.atoms$alt) &
-                          is.na(my.atoms$insert), ]
+                          is.na(my.atoms$insert),]
   # print(unique(my.alphas$chain))
   pdbXstrand <- split(my.alphas, my.alphas$chain)
   temp <- names(pdbXstrand)
