@@ -9,10 +9,6 @@ selected.up <- '<http://purl.uniprot.org/uniprot/Q9UM73>'
 
 # selected.up <- readline(prompt = 'enter UniProt IRI: ')
 
-###   ###   ###
-
-###   ###   ###
-
 # searching v40 and v42 namespaces seperately
 # and then unioning
 # i have a funny feeling about this
