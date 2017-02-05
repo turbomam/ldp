@@ -1,7 +1,7 @@
 Sys.setenv(JAVA_HOME = 'C:\\Program Files\\Java\\jre1.8.0_111')
 
 library(rrdf)
-library(reshape)
+# library(reshape)
 
 my.query <-
   'PREFIX PDBo: <http://rdf.wwpdb.org/schema/pdbx-v40.owl#>
@@ -68,7 +68,7 @@ WHERE
   # ?protein up:encodedBy ?gene .
   # ?gene skos:prefLabel ?text .
 }"
-
+  
   system.time(up2pdb <-
                 sparql.remote(
                   endpoint = my.endpoint,
