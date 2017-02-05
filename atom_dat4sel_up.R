@@ -212,3 +212,5 @@ atom.dat <- lapply(desired.pdbs, function(current.pdb) {
 })
 
 atom.dat <- unlist(atom.dat, recursive = FALSE)
+
+save(atom.dat, file = "atom_dat.Rdata")
